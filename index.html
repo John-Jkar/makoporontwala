@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Makoporo Ntwala Safaris | Uganda Tours & Travel</title>
+  <meta name="description" content="Makoporo Ntwala Safaris is a premier tour and travel company based in Uganda, offering authentic, immersive safari experiences across East Africa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <img class="brand__logo" src="Logo1.png" alt="Makoporo Ntwala Safaris logo" />
+        <div class="brand__text">
+          <span>Makoporo Ntwala Safaris</span>
+          <small>Uganda Tours & Travel</small>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#experiences">Experiences</a>
+        <a href="#services">Services</a>
+        <a href="#journeys">Journeys</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu" id="menuToggle" aria-label="Open menu">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">Turn your dream adventure into a reality</p>
+          <h1>
+            Crafted safaris for
+            <span class="hero__rotator" id="rotatingText">gorilla treks</span>
+          </h1>
+          <p class="lead">
+            Makoporo Ntwala Safaris is a premier tour and travel company based in Uganda, dedicated to authentic, immersive, and unforgettable journeys across East Africa.
+          </p>
+          <div class="hero__actions">
+            <button class="btn" id="openPlanner">Plan a Journey</button>
+            <a class="btn btn--ghost" href="#journeys">View Journeys</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value" data-count="12">0</span>
+              <span class="stat__label">Curated routes</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="240">0</span>
+              <span class="stat__label">Happy travelers</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value" data-count="98">0</span>
+              <span class="stat__label">Wildlife sightings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__accent"></div>
+    </section>
+
+    <section class="experiences" id="experiences">
+      <div class="container">
+        <div class="section__header">
+          <h2>Signature Experiences</h2>
+          <p>Handcrafted itineraries designed for slow, immersive exploration.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Gorilla Encounter</h3>
+            <p>Guided trek in Bwindi Impenetrable Forest with permits, porters, and recovery massage.</p>
+            <span class="pill">3-4 Days</span>
+          </article>
+          <article class="card">
+            <h3>Great Lakes Circuit</h3>
+            <p>Lake Bunyonyi canoeing, crater lake hikes, and coffee farm visits near Fort Portal.</p>
+            <span class="pill">7 Days</span>
+          </article>
+          <article class="card">
+            <h3>Wildlife & Waterfalls</h3>
+            <p>Queen Elizabeth safari drives, Kazinga Channel cruise, and Sipi Falls hikes.</p>
+            <span class="pill">5 Days</span>
+          </article>
+          <article class="card">
+            <h3>Culture & Craft</h3>
+            <p>Meet local artisans, drum workshops, and royal history in the Kingdom of Buganda.</p>
+            <span class="pill">2-3 Days</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <h2>Our Services</h2>
+          <p>From wildlife encounters to seamless transfers, we handle the details.</p>
+        </div>
+        <div class="services__grid">
+          <article class="service-card">
+            <h3>Group Drives</h3>
+            <p>Shared drives across national parks with dedicated guide coordination.</p>
+          </article>
+          <article class="service-card">
+            <h3>Gorilla Tracking</h3>
+            <p>Permits, porter support, and expert tracking in Bwindi and Mgahinga.</p>
+          </article>
+          <article class="service-card">
+            <h3>Bird Watching</h3>
+            <p>Birding excursions for shoebills, forest endemics, and lake species.</p>
+          </article>
+          <article class="service-card">
+            <h3>Chimpanzee Tracking</h3>
+            <p>Guided treks in Kibale and Budongo with flexible start times.</p>
+          </article>
+        </div>
+        <div class="services__extra">
+          <h4>We also offer</h4>
+          <ul>
+            <li>Airport transfers</li>
+            <li>Car rental services</li>
+            <li>Air ticketing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="journeys" id="journeys">
+      <div class="container">
+        <div class="section__header">
+          <h2>Journeys for Every Traveler</h2>
+          <p>Filter by interest to preview our most-requested routes.</p>
+        </div>
+        <div class="filters" id="journeyFilters">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="wildlife">Wildlife</button>
+          <button class="filter" data-filter="primates">Primates</button>
+          <button class="filter" data-filter="cultural">Cultural</button>
+          <button class="filter" data-filter="adventure">Adventure</button>
+        </div>
+        <div class="journey-grid" id="journeyGrid">
+          <article class="journey" data-tags="wildlife,adventure">
+            <h3>Classic Savannah</h3>
+            <p>3 parks in 8 days: Murchison, Queen Elizabeth, and Lake Mburo.</p>
+            <span>From $1,480</span>
+          </article>
+          <article class="journey" data-tags="primates,adventure">
+            <h3>Gorilla & Chimp Trail</h3>
+            <p>Track chimps in Kibale then gorillas in Bwindi with a rest day on Lake Bunyonyi.</p>
+            <span>From $2,050</span>
+          </article>
+          <article class="journey" data-tags="cultural">
+            <h3>Kingdoms of Uganda</h3>
+            <p>Buganda, Bunyoro, and Toro heritage sites with community homestays.</p>
+            <span>From $1,120</span>
+          </article>
+          <article class="journey" data-tags="adventure">
+            <h3>Nile Source Adventure</h3>
+            <p>White-water rafting, sunset kayaking, and a Jinja culinary crawl.</p>
+            <span>From $980</span>
+          </article>
+          <article class="journey" data-tags="wildlife,cultural">
+            <h3>Birding & Beads</h3>
+            <p>Shoebill search on Lake Victoria and artisan cooperatives in Entebbe.</p>
+            <span>From $860</span>
+          </article>
+          <article class="journey" data-tags="primates,cultural">
+            <h3>Forest & Folklore</h3>
+            <p>Primate tracking paired with storytelling nights in the Rwenzori foothills.</p>
+            <span>From $1,340</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+      <div class="container why-us__grid">
+        <div>
+          <div class="section__header">
+            <h2>Why Makoporo Ntwala</h2>
+            <p>We keep every journey human-scale, locally guided, and transparently priced.</p>
+          </div>
+          <ul class="checklist">
+            <li>Locally owned with resident guides in each region</li>
+            <li>Guaranteed safari vehicle or private departure options</li>
+            <li>Custom trip design in under 48 hours</li>
+            <li>Emergency support and logistics handled on the ground</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Traveler Notes</h3>
+          <div class="testimonial" id="testimonialBox">
+            <p class="testimonial__text">“The gorilla trek was flawless. We felt safe, seen, and deeply cared for.”</p>
+            <span class="testimonial__name">Amina K., Nairobi</span>
+          </div>
+          <div class="testimonial__controls">
+            <button class="btn btn--ghost" id="prevTestimonial">Prev</button>
+            <button class="btn" id="nextTestimonial">Next</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="planner" id="contact">
+      <div class="container planner__grid">
+        <div>
+          <div class="section__header">
+            <h2>Plan Your Safari</h2>
+            <p>Tell us your travel dates and interests. We will respond with a tailored itinerary.</p>
+          </div>
+          <form class="form" id="plannerForm">
+            <div class="form__row">
+              <label>
+                Full name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" placeholder="you@email.com" required />
+              </label>
+            </div>
+            <div class="form__row">
+              <label>
+                Travel window
+                <input type="text" name="dates" placeholder="e.g. Aug 12-19" required />
+              </label>
+              <label>
+                Group size
+                <input type="number" name="group" min="1" max="20" value="2" required />
+              </label>
+            </div>
+            <label>
+              Interests
+              <select name="interest">
+                <option>Wildlife</option>
+                <option>Primates</option>
+                <option>Cultural</option>
+                <option>Adventure</option>
+                <option>Luxury</option>
+              </select>
+            </label>
+            <label>
+              Notes
+              <textarea name="notes" rows="4" placeholder="Tell us about your dream safari"></textarea>
+            </label>
+            <button class="btn" type="submit">Request itinerary</button>
+            <p class="form__status" id="formStatus"></p>
+          </form>
+        </div>
+                <div class="contact-card">
+          <h3>Contact Us</h3>
+          <p class="contact-phone">Phone: +256 783 863481</p>
+          <div class="contact-actions">
+            <a href="https://wa.me/256783863481" class="contact-icon-link" aria-label="WhatsApp">
+              <img src="icons/whatsapp.svg" alt="" />
+            </a>
+            <a href="mailto:makoporoltd@gmail.com" class="contact-icon-link" aria-label="Email">
+              <img src="icons/envelope.svg" alt="" />
+            </a>
+            <a href="https://www.makoporontwala.com" class="contact-icon-link" aria-label="Website">
+              <img src="icons/globe-alt.svg" alt="" />
+            </a>
+          </div>
+          <div class="hours">
+            <span>Office Hours</span>
+            <strong>Mon-Sat: 08:00 - 18:00</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="brand brand--small">
+          <img class="brand__logo" src="Logo1.png" alt="Makoporo Ntwala Safaris logo" />
+          <div class="brand__text">
+            <span>Makoporo Ntwala Safaris</span>
+            <small>Beyond the ordinary</small>
+          </div>
+        </div>
+        <p>Crafted safaris across Uganda, Rwanda, and Kenya.</p>
+        <p>Phone: +256 783 863481</p>
+        <div class="contact-actions">
+          <a href="https://wa.me/256783863481" class="contact-icon-link" aria-label="WhatsApp">
+            <img src="icons/whatsapp.svg" alt="" />
+          </a>
+          <a href="mailto:makoporoltd@gmail.com" class="contact-icon-link" aria-label="Email">
+            <img src="icons/envelope.svg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#journeys">Journeys</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <div class="footer-icons">
+          <a href="tel:+256783863481" class="footer-icon-link" aria-label="Call">
+            <img src="icons/phone.svg" alt="" />
+          </a>
+          <a href="https://wa.me/256783863481" class="footer-icon-link" aria-label="WhatsApp">
+            <img src="icons/whatsapp.svg" alt="" />
+          </a>
+          <a href="mailto:makoporoltd@gmail.com" class="footer-icon-link" aria-label="Email">
+            <img src="icons/envelope.svg" alt="" />
+          </a>
+          <a href="https://www.makoporontwala.com" class="footer-icon-link" aria-label="Website">
+            <img src="icons/globe-alt.svg" alt="" />
+          </a>
+        </div>
+        <p>Instagram: @makoporontwala</p>
+      </div>
+    <div class="footer__bottom">
+      <span>© 2026 Makoporo Ntwala Safaris. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="storyModal" aria-hidden="true">
+    <div class="modal__content">
+      <button class="modal__close" id="closeStory" aria-label="Close">X</button>
+      <h3>Our Safari Story</h3>
+      <p>We started Makoporo Ntwala to ensure every traveler meets the people behind the landscapes. Our guides are storytellers, conservation partners, and trusted hosts.</p>
+      <div class="modal__video">
+        <div class="pulse"></div>
+        <span>Video preview coming soon</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

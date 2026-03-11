@@ -116,11 +116,17 @@ openPlanner?.addEventListener("click", () => {
   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
 });
 
+const nav = document.querySelector(".nav");
+
 menuToggle?.addEventListener("click", () => {
-  const nav = document.querySelector(".nav");
   if (!nav) return;
-  const isOpen = nav.style.display === "flex";
-  nav.style.display = isOpen ? "none" : "flex";
+  nav.classList.toggle("is-open");
+});
+
+nav?.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("is-open");
+  });
 });
 
 const nextTestimonial = document.getElementById("nextTestimonial");
